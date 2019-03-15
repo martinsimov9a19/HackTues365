@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerOneMovement : MonoBehaviour
 {
     public float speed = 1f, speed_temp;
     public Rigidbody2D rb;
     private Vector2 movement;
     private bool isGrounded = true;
+
 
     private float fallmultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
@@ -20,8 +22,9 @@ public class PlayerOneMovement : MonoBehaviour
 
     void Start()
     {
+
         rb = gameObject.GetComponent<Rigidbody2D>();
-        jumpVelocity = 5f;
+        
         if (gameObject.tag == "PlayerOne")
         {
             player_index = 0;
@@ -33,7 +36,6 @@ public class PlayerOneMovement : MonoBehaviour
 
     void Update()
     {
-
 
         if (Input.GetButtonDown(controlls[player_index, 0]))
         {

@@ -156,5 +156,4 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-40e55bfccc08117f1fcaa8de49b82a20 Assembly-CSharp.dll:.PlayerMovement
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Player_Network
+74e851e2f814e6104d97f3f829db701f Assembly-CSharp.dll:.PlayerOneMovement
