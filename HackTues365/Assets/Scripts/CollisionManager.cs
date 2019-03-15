@@ -20,20 +20,21 @@ public class CollisionManager : MonoBehaviour
             gameManager.EndGame();
         }
         if (other.tag == "Bush") {
-            Color tempColor = other.GetComponent<SpriteRenderer>().color;
-            tempColor.a = 0.5f;
-            other.GetComponent<SpriteRenderer>().color = tempColor;
-            Debug.Log("Im working");
+            changeOpacity(0.5f, other.gameObject);
         }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Bush") {
-            Color tempColor = collision.GetComponent<SpriteRenderer>().color;
-            tempColor.a = 1f;
-            collision.GetComponent<SpriteRenderer>().color = tempColor;
-            Debug.Log("Im working");
+            changeOpacity(1f, collision.gameObject);
         }
     }
 
+
+    private void changeOpacity(float alpha, GameObject gameObject)
+    {
+        Color tempColor = gameObject.GetComponent<SpriteRenderer>().color;
+        tempColor.a = alpha;
+        gameObject.GetComponent<SpriteRenderer>().color = tempColor;
+    }
 }
