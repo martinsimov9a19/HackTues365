@@ -11,6 +11,9 @@ public class PlayerOneMovement : MonoBehaviour
 
     private float fallmultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
+    private int player_index;
+
+    private string[,] controlls =  { { "a", "w", "d" }, { "left", "up", "right"} };
 
     [Range(1, 10)]
     public float jumpVelocity = 5f;
@@ -19,30 +22,37 @@ public class PlayerOneMovement : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         jumpVelocity = 5f;
+        if (gameObject.tag == "PlayerOne")
+        {
+            player_index = 0;
+        }
+        else if(gameObject.tag == "PlayerTwo"){
+            player_index = 1;
+        }
     }
 
     void Update()
     {
 
 
-        if (Input.GetButtonDown("LeftArrow"))
+        if (Input.GetButtonDown(controlls[player_index, 0]))
         {
 
             speed_temp = -speed;
         }
-        else if (Input.GetKeyDown("RightArrow"))
+        else if (Input.GetKeyDown(controlls[player_index, 2]))
         {
 
             speed_temp = Mathf.Abs(speed);
         }
-        else if (Input.GetButtonUp("LeftArrow") || Input.GetButtonUp("RightArrow"))
+        else if (Input.GetButtonUp(controlls[player_index, 0]) || Input.GetButtonUp(controlls[player_index, 2]))
         {
             speed_temp = 0;
         }
         movement = new Vector2(speed_temp, 0);
 
 
-        if (Input.GetKeyDown("UpArrow") && isGrounded && rb.velocity.y == 0)
+        if (Input.GetKeyDown(controlls[player_index, 1]) && isGrounded && rb.velocity.y == 0)
         {
             isGrounded = false;
             rb.velocity = Vector2.up * jumpVelocity;
