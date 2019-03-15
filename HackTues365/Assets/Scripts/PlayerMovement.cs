@@ -7,25 +7,35 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 1f;
     public Rigidbody2D rb;
     private Vector2 movement;
-    private bool isJumping = false;
+
+
+    private float fallmultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
+
+    [Range(1, 10)]
+    public float jumpVelocity;
+
+    void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal") * speed;
-        //float vertical = Input.GetAxis("Vertical") * speed;
-        //movement = new Vector2(horizontal, gameObjecst.transform.position.y);
+        movement = new Vector2(horizontal, 0);
+        if (Input.GetButton("Jump"))
+        {
+            rb.velocity = Vector2.up * jumpVelocity;
+            Debug.Log("hi");
+        }
+
 
     }
 
     void FixedUpdate()
     {
-        if (Input.GetButtonDown("w") && isJumping == false)
-        {
-
-            rb.AddForce(new Vector2(0f, 100f));
-        }
-        rb.velocity = movement;
-        
+        gameObject.transform.Translate(movement / 10);
     }
 
 }
