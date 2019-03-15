@@ -10,13 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 586273094322701135}
   - component: {fileID: 586273094322701134}
-  - component: {fileID: 8665610690314908895}
   - component: {fileID: 6483804153718987343}
-  - component: {fileID: 7122630044547538514}
   - component: {fileID: 5748691210659249458}
+  - component: {fileID: 1001340787482501275}
   m_Layer: 0
-  m_Name: Player Offline
-  m_TagString: Untagged
+  m_Name: PlayerOne
+  m_TagString: PlayerTwo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,22 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8665610690314908895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586273094322701137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 023cde15a367ff441bb47f30eb9e592c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  rb: {fileID: 0}
-  lowJumpMultiplier: 2
-  jumpVelocity: 5
 --- !u!50 &6483804153718987343
 Rigidbody2D:
   serializedVersion: 4
@@ -120,22 +103,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7122630044547538514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586273094322701137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4619876f813d5c449a5383776631d9c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  rb: {fileID: 6483804153718987343}
-  lowJumpMultiplier: 2
-  jumpVelocity: 5
 --- !u!58 &5748691210659249458
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -152,3 +119,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!114 &1001340787482501275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586273094322701137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4619876f813d5c449a5383776631d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  speed_temp: 0
+  rb: {fileID: 0}
+  lowJumpMultiplier: 2
+  jumpVelocity: 5
