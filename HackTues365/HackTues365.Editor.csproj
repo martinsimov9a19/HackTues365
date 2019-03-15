@@ -661,6 +661,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="HackTues365.csproj">
+      <Project>{8E5228A9-6983-934C-4F78-CA2AF1573161}</Project>
+      <Name>HackTues365</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{3A848AB7-9891-EDDA-D555-BF184C2F81F4}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
