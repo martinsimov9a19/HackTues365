@@ -8,6 +8,8 @@ TagManager:
   - PlayerTwo
   - Bush
   - Trap
+  - KeyTwo
+  - KeyOne
   layers:
   - Default
   - TransparentFX
@@ -44,4 +46,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Key
+    uniqueID: 2794034491
+    locked: 0
+  - name: Player
+    uniqueID: 534393917
+    locked: 0
+  - name: Bush
+    uniqueID: 1567959867
     locked: 0

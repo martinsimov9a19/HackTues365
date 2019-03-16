@@ -9,6 +9,7 @@ public class PlayerOneMovement : MonoBehaviour
     public Rigidbody2D rb;
     private Vector2 movement;
     private bool isGrounded = true;
+ 
 
 
     private float fallmultiplier = 2.5f;

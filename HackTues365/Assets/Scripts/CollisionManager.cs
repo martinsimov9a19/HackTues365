@@ -9,6 +9,7 @@ public class CollisionManager : MonoBehaviour
     public GameManager gameManager;
     private Vector2 StartPosition;
 
+
     void Start()
     {
         StartPosition = gameObject.transform.position;
