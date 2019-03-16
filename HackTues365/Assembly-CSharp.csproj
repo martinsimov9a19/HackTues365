@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\MirrorPlayer.cs" />
     <Compile Include="Assets\Scripts\ObjectRemoval.cs" />
+    <Compile Include="Assets\Scripts\PixelToSprite.cs" />
     <Compile Include="Assets\Scripts\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\PlayerOneMovement.cs" />
     <Compile Include="Assets\Scripts\VolumeContoller.cs" />

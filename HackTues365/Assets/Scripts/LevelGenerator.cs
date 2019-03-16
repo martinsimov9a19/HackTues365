@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     public Texture2D LevelMap;
-
+    public SpriteInfo[] sprites;
 
 
     void Start()
@@ -16,7 +16,7 @@ public class LevelGenerator : MonoBehaviour
     void LevelGenerate() {
         for (int x = 0; x < LevelMap.width; x++) {
             for (int y = 0; y < LevelMap.height; y++) {
-
+                GenerateSprite(x, y);
             }
         }
     }
@@ -27,6 +27,14 @@ public class LevelGenerator : MonoBehaviour
         if (color.a == 0) {
             return;
         }
-        //Check For pixel color and generate sprite
+        foreach(SpriteInfo sprite in sprites) {
+            
+            if (sprite.color.Equals(color)) {
+                Debug.Log("Here");
+                Vector2 pos = new Vector2(x, y);
+                Instantiate(sprite.prefab, pos, Quaternion.identity, transform);
+                
+            }
+        }
     }
 }
