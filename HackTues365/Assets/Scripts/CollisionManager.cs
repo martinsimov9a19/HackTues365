@@ -32,7 +32,7 @@ public class CollisionManager : MonoBehaviour
         if (other.tag == "Door") {
             PlayerNearDoor = true;
         }
-
+        
 
     }
     void OnTriggerExit2D(Collider2D collision)
