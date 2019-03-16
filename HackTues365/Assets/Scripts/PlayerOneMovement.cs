@@ -9,15 +9,10 @@ public class PlayerOneMovement : MonoBehaviour
     public Rigidbody2D rb;
     private Vector2 movement;
     private bool isGrounded = true;
-    
-
     private int player_index;
-
-    private string[,] controlls =  { { "a", "w", "d" }, { "left", "up", "right"} };
-
+    private string[,] controlls =  { { "a", "w", "d", "f" }, { "left", "up", "right", "enter"} };
     [Range(1, 10)]
     public float jumpVelocity = 5f;
-
     public GameManager gameManager;
 
     void Start()
@@ -57,6 +52,13 @@ public class PlayerOneMovement : MonoBehaviour
         if (rb.velocity.y < 0)
         {
             isGrounded = true;
+        }
+        if ((Input.GetButtonDown(controlls[player_index, 3]) || Input.GetButtonDown(controlls[player_index, 3])) && gameObject.GetComponent<CollisionManager>().PlayerNearDoor == true) {
+
+            if (gameObject.GetComponent<PlayerInventory>().HasKey == true) {
+                gameManager.KeysInsertedCount++;
+                
+            }
         }
 
     }

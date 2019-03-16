@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\CollisionManager.cs" />
+    <Compile Include="Assets\Scripts\DoorSystem.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\ObjectRemoval.cs" />
     <Compile Include="Assets\Scripts\PlayerInventory.cs" />
