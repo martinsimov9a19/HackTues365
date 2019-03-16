@@ -11,7 +11,7 @@ public class PlayerOneMovement : MonoBehaviour
     private bool isGrounded = true;
     private int player_index;
     private string[,] controlls =  { { "a", "w", "d", "f" }, { "left", "up", "right", "Submit"} };
-    [Range(1, 10)]
+    [Range(1, 15)]
     public float jumpVelocity = 5f;
     public GameManager gameManager;
     public bool PlayerHasInserted = false;

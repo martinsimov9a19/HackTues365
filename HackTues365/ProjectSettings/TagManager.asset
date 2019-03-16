@@ -45,15 +45,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1924339803
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Key
     uniqueID: 2794034491
     locked: 0
-  - name: Player
-    uniqueID: 534393917
-    locked: 0
   - name: Bush
     uniqueID: 1567959867
+    locked: 0
+  - name: Traps
+    uniqueID: 2626559783
+    locked: 0
+  - name: Player
+    uniqueID: 534393917
     locked: 0
