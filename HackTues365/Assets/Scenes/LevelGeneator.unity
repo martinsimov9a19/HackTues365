@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44658017, g: 0.49641502, b: 0.57482153, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -155,10 +155,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 314aad87a57b7e44a91d76fdc9df432a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelMap: {fileID: 2800000, guid: 7a3a83bf6b5d5d14baf79f2d02e9af40, type: 3}
+  LevelMap: {fileID: 2800000, guid: c53e73eede7a28a4abc3cb3c45b3cd7f, type: 3}
   sprites:
   - color: {r: 0, g: 0, b: 0, a: 1}
     prefab: {fileID: 4103751129644540465, guid: 1453b0e3a0842d04b94297002af32739,
+      type: 3}
+  - color: {r: 0, g: 1, b: 0, a: 1}
+    prefab: {fileID: 1627065815319002837, guid: 628c844a208130f49b09582166251602,
+      type: 3}
+  - color: {r: 1, g: 0, b: 1, a: 1}
+    prefab: {fileID: 2531400781950928770, guid: cde34356b1588314593beaeff929541c,
+      type: 3}
+  - color: {r: 0, g: 0, b: 1, a: 1}
+    prefab: {fileID: 8598424046693168525, guid: 3282dacf77afb8142b7c5579051a132d,
+      type: 3}
+  - color: {r: 1, g: 1, b: 0, a: 1}
+    prefab: {fileID: 5214176962349981886, guid: 621e1c9705864aa4384a4920f65cfa3a,
+      type: 3}
+  - color: {r: 1, g: 0, b: 0, a: 1}
+    prefab: {fileID: 8300632560071144796, guid: 7da3824c21819074786466d0793135c8,
       type: 3}
 --- !u!1 &693675509
 GameObject:
