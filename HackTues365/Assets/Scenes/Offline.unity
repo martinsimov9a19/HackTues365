@@ -573,6 +573,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2044050997}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &509160600
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509160599}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1039c8bf9afe164aada77acf31334c0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!122 &509160606
 Halo:
   m_ObjectHideFlags: 0
@@ -1873,6 +1892,25 @@ Halo:
     serializedVersion: 2
     rgba: 4285906890
   m_Size: 1.59
+--- !u!95 &1685245043
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685245035}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9c2fc0e117e9c2b4892f72941ffd5e62, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1732482331 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5214176962349981887, guid: 621e1c9705864aa4384a4920f65cfa3a,
@@ -2271,6 +2309,16 @@ PrefabInstance:
       propertyPath: jumpVelocity
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1001340787482501275, guid: 277425c815cb42a44ad01a71d1ce45ae,
+        type: 3}
+      propertyPath: animatorMale
+      value: 
+      objectReference: {fileID: 509160600}
+    - target: {fileID: 1001340787482501275, guid: 277425c815cb42a44ad01a71d1ce45ae,
+        type: 3}
+      propertyPath: animatorFemale
+      value: 
+      objectReference: {fileID: 1685245043}
     - target: {fileID: 6483804153718987343, guid: 277425c815cb42a44ad01a71d1ce45ae,
         type: 3}
       propertyPath: m_GravityScale
@@ -2430,7 +2478,7 @@ PrefabInstance:
     - target: {fileID: 586273094322701134, guid: 277425c815cb42a44ad01a71d1ce45ae,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7828850554902936338, guid: 277425c815cb42a44ad01a71d1ce45ae,
         type: 3}
@@ -2452,6 +2500,21 @@ PrefabInstance:
       propertyPath: jumpVelocity
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1001340787482501275, guid: 277425c815cb42a44ad01a71d1ce45ae,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 509160600}
+    - target: {fileID: 1001340787482501275, guid: 277425c815cb42a44ad01a71d1ce45ae,
+        type: 3}
+      propertyPath: animatorMale
+      value: 
+      objectReference: {fileID: 509160600}
+    - target: {fileID: 1001340787482501275, guid: 277425c815cb42a44ad01a71d1ce45ae,
+        type: 3}
+      propertyPath: animatorFemale
+      value: 
+      objectReference: {fileID: 1685245043}
     - target: {fileID: 6483804153718987343, guid: 277425c815cb42a44ad01a71d1ce45ae,
         type: 3}
       propertyPath: m_GravityScale

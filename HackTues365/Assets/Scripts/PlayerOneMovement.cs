@@ -15,6 +15,7 @@ public class PlayerOneMovement : MonoBehaviour
     public float jumpVelocity = 5f;
     public GameManager gameManager;
     public bool PlayerHasInserted = false;
+    public Animator animatorMale, animatorFemale;
 
     void Start()
     {
@@ -30,17 +31,20 @@ public class PlayerOneMovement : MonoBehaviour
 
         if (Input.GetButtonDown(controlls[player_index, 0]))
         {
-
             speed_temp = -speed;
+            PlayAnimation();
+
         }
         else if (Input.GetKeyDown(controlls[player_index, 2]))
         {
 
             speed_temp = Mathf.Abs(speed);
+            PlayAnimation();
         }
         else if (Input.GetButtonUp(controlls[player_index, 0]) || Input.GetButtonUp(controlls[player_index, 2]))
         {
             speed_temp = 0;
+            EndAnimation();
         }
         movement = new Vector2(speed_temp, 0);
 
@@ -68,6 +72,27 @@ public class PlayerOneMovement : MonoBehaviour
     void FixedUpdate()
     {
         gameObject.transform.Translate(movement / 10);
+    }
+
+    void PlayAnimation() {
+        if (player_index == 0)
+        {
+            animatorMale.SetBool("IsMoving", true);
+        }
+        else if (player_index == 1) {
+            animatorFemale.SetBool("IsMoving", true);
+        }
+    }
+
+    void EndAnimation() {
+        if (player_index == 0)
+        {
+            animatorMale.SetBool("IsMoving", false);
+        }
+        else if (player_index == 1)
+        {
+            animatorFemale.SetBool("IsMoving", false);
+        }
     }
 
 }
