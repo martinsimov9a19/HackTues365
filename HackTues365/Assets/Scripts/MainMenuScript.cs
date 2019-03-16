@@ -8,19 +8,6 @@ public class MainMenuScript : MonoBehaviour
 
     public static Transform text;
 
-    void Start()
-    {
-
-       
-
-
-    }
-
-    private void Update()
-    {
-        
-    }
-
 
     public void QuitGame()
     {

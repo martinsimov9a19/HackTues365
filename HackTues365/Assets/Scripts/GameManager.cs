@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     private int player_index;
     public int KeysInsertedCount = 0;
+    public Canvas WinMenu, LoseMenu;
+   
+    public int DeathCounter = 0;
+
 
     public void RespawnPlayer(Vector2 StartPosition, GameObject player) {
         player.transform.position = StartPosition;
@@ -31,10 +36,17 @@ public class GameManager : MonoBehaviour
         if (KeysInsertedCount == 2) {
             WinGame();
         }
+        if (DeathCounter >= 5) {
+            LoseGame();
+        }
     }
 
-
     private void WinGame() {
-        Debug.Log("you win!");
+        WinMenu.GetComponent<Canvas>().enabled = true;
+        Time.timeScale = 0f;
+    }
+    private void LoseGame() {
+        LoseMenu.GetComponent<Canvas>().enabled = true;
+        Time.timeScale = 0f;
     }
 }

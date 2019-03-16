@@ -22,6 +22,7 @@ public class CollisionManager : MonoBehaviour
     {
         if (other.tag == "Trap") {
             gameManager.RespawnPlayer(StartPosition, gameObject);
+            gameManager.DeathCounter++;
         }
         if (other.tag == "Bush") {
             changeOpacity(0.5f, other.gameObject);
