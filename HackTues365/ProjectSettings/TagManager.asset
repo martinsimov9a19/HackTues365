@@ -10,6 +10,7 @@ TagManager:
   - Trap
   - KeyTwo
   - KeyOne
+  - Door
   layers:
   - Default
   - TransparentFX

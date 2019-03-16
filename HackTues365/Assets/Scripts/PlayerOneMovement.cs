@@ -10,10 +10,11 @@ public class PlayerOneMovement : MonoBehaviour
     private Vector2 movement;
     private bool isGrounded = true;
     private int player_index;
-    private string[,] controlls =  { { "a", "w", "d", "f" }, { "left", "up", "right", "enter"} };
+    private string[,] controlls =  { { "a", "w", "d", "f" }, { "left", "up", "right", "Submit"} };
     [Range(1, 10)]
     public float jumpVelocity = 5f;
     public GameManager gameManager;
+    public bool PlayerHasInserted = false;
 
     void Start()
     {
@@ -53,11 +54,12 @@ public class PlayerOneMovement : MonoBehaviour
         {
             isGrounded = true;
         }
-        if ((Input.GetButtonDown(controlls[player_index, 3]) || Input.GetButtonDown(controlls[player_index, 3])) && gameObject.GetComponent<CollisionManager>().PlayerNearDoor == true) {
+        if (Input.GetButtonDown(controlls[player_index, 3]) && gameObject.GetComponent<CollisionManager>().PlayerNearDoor == true) {
 
-            if (gameObject.GetComponent<PlayerInventory>().HasKey == true) {
+            if (gameObject.GetComponent<PlayerInventory>().HasKey == true && PlayerHasInserted == false) {
                 gameManager.KeysInsertedCount++;
-                
+                PlayerHasInserted = true;
+                Debug.Log("Insert");
             }
         }
 
