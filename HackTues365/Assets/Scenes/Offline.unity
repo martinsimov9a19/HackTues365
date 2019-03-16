@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -224,6 +224,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 25529896}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &57076739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 57076740}
+  - component: {fileID: 57076741}
+  m_Layer: 0
+  m_Name: PlayerLighting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &57076740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57076739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1906571901}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &57076741
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57076739}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 4.11
+  m_SpotAngle: 30
+  m_CookieSize: 9.9
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+  m_DrawHalo: 1
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &103836724
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +424,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1627065815140738694}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &583756666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 583756667}
+  - component: {fileID: 583756668}
+  m_Layer: 0
+  m_Name: PlayerLighting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &583756667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583756666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2001178760}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &583756668
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583756666}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 4.11
+  m_SpotAngle: 49.298996
+  m_CookieSize: 9.9
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.02
+    m_NormalBias: 0.42
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+  m_DrawHalo: 1
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &823487413
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +759,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -1355,7 +1493,7 @@ PrefabInstance:
     - target: {fileID: 586273094322701135, guid: 277425c815cb42a44ad01a71d1ce45ae,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3
+      value: 1.22
       objectReference: {fileID: 0}
     - target: {fileID: 586273094322701135, guid: 277425c815cb42a44ad01a71d1ce45ae,
         type: 3}
@@ -1441,11 +1579,23 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7122630044547538514, guid: 277425c815cb42a44ad01a71d1ce45ae, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 277425c815cb42a44ad01a71d1ce45ae, type: 3}
+--- !u!4 &1906571901 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 586273094322701135, guid: 277425c815cb42a44ad01a71d1ce45ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1906571900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1987188397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8300632560071144797, guid: 7da3824c21819074786466d0793135c8,
     type: 3}
   m_PrefabInstance: {fileID: 8300632560378504176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2001178760 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 586273094322701135, guid: 277425c815cb42a44ad01a71d1ce45ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 2044050997}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2005865708
 GameObject:
@@ -1509,7 +1659,7 @@ PrefabInstance:
     - target: {fileID: 586273094322701135, guid: 277425c815cb42a44ad01a71d1ce45ae,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3
+      value: 1.29
       objectReference: {fileID: 0}
     - target: {fileID: 586273094322701135, guid: 277425c815cb42a44ad01a71d1ce45ae,
         type: 3}

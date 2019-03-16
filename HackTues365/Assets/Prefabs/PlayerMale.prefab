@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  PlayerNearDoor: 0
 --- !u!114 &6184454643771394158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c875dd7e37d9d4ca5d174d927b949e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HasKey: 0
 --- !u!50 &6483804153718987343
 Rigidbody2D:
   serializedVersion: 4
@@ -147,6 +149,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   jumpVelocity: 7.5
   gameManager: {fileID: 0}
+  PlayerHasInserted: 0
 --- !u!61 &2971189237655378484
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -160,10 +163,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09434044, y: 4.5754704}
+  m_Offset: {x: -0.094340324, y: -0.32440805}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5.67, y: 10}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
@@ -171,5 +174,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.3492413, y: 9.150941}
+  m_Size: {x: 4.3492413, y: 9.150935}
   m_EdgeRadius: 0
