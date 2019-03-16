@@ -27,7 +27,7 @@ public class CollisionManager : MonoBehaviour
         }
         if (other.tag == "KeyOne" || other.tag == "KeyTwo") {
             AddUniquePlayerKey(player_index, other.gameObject);
-            
+            other.GetComponent<ObjectRemoval>().DestroyGameObject();
         }
        
         

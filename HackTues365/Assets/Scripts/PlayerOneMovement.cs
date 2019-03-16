@@ -53,7 +53,6 @@ public class PlayerOneMovement : MonoBehaviour
         {
             isGrounded = false;
             rb.velocity = Vector2.up * jumpVelocity;
-            Debug.Log("hi");
         }
         if (rb.velocity.y < 0)
         {
