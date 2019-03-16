@@ -7,17 +7,17 @@ public class CollisionManager : MonoBehaviour
 {
 
     public GameManager gameManager;
+    private Vector2 StartPosition;
 
-
-    void Update()
+    void Start()
     {
-        
+        StartPosition = gameObject.transform.position;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Trap") {
-            gameManager.EndGame();
+            gameManager.RespawnPlayer(StartPosition, gameObject);
         }
         if (other.tag == "Bush") {
             changeOpacity(0.5f, other.gameObject);

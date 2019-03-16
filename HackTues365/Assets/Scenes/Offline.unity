@@ -124,6 +124,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 8300632560071144796, guid: 7da3824c21819074786466d0793135c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trap
+      objectReference: {fileID: 0}
     - target: {fileID: 8300632560071144797, guid: 7da3824c21819074786466d0793135c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -187,6 +192,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 25529896}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &103836724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 103836726}
+  - component: {fileID: 103836725}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &103836725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103836724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801507ea26d96544e82769fba6a55ccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &103836726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103836724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &172846681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -512,6 +560,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 8300632560071144796, guid: 7da3824c21819074786466d0793135c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trap
+      objectReference: {fileID: 0}
     - target: {fileID: 8300632560071144797, guid: 7da3824c21819074786466d0793135c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -730,6 +783,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 8300632560071144796, guid: 7da3824c21819074786466d0793135c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trap
+      objectReference: {fileID: 0}
     - target: {fileID: 8300632560071144797, guid: 7da3824c21819074786466d0793135c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -804,6 +862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300632560071144796, guid: 7da3824c21819074786466d0793135c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trap
       objectReference: {fileID: 0}
     - target: {fileID: 8300632560071144797, guid: 7da3824c21819074786466d0793135c8,
         type: 3}
@@ -991,6 +1054,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: c15579506507b644383b16c362ff6b2d,
         type: 3}
+    - target: {fileID: 7828850554902936338, guid: 277425c815cb42a44ad01a71d1ce45ae,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 103836725}
     m_RemovedComponents:
     - {fileID: 7122630044547538514, guid: 277425c815cb42a44ad01a71d1ce45ae, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 277425c815cb42a44ad01a71d1ce45ae, type: 3}
@@ -1124,6 +1192,11 @@ PrefabInstance:
       propertyPath: bushes
       value: 
       objectReference: {fileID: 232790099}
+    - target: {fileID: 7828850554902936338, guid: 277425c815cb42a44ad01a71d1ce45ae,
+        type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 103836725}
     m_RemovedComponents:
     - {fileID: 7122630044547538514, guid: 277425c815cb42a44ad01a71d1ce45ae, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 277425c815cb42a44ad01a71d1ce45ae, type: 3}
@@ -1287,6 +1360,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes
       objectReference: {fileID: 0}
+    - target: {fileID: 8300632560071144796, guid: 7da3824c21819074786466d0793135c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trap
+      objectReference: {fileID: 0}
     - target: {fileID: 8300632560071144797, guid: 7da3824c21819074786466d0793135c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1355,6 +1433,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Beartrap
+      objectReference: {fileID: 0}
+    - target: {fileID: 9191004016810410068, guid: 90336c2e2bfe10a4983a74f9c2d0d331,
+        type: 3}
+      propertyPath: m_TagString
+      value: Trap
       objectReference: {fileID: 0}
     - target: {fileID: 9191004016810410066, guid: 90336c2e2bfe10a4983a74f9c2d0d331,
         type: 3}

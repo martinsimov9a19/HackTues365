@@ -4,21 +4,13 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    
+
+    public void RespawnPlayer(Vector2 StartPosition, GameObject player) {
+        player.transform.position = StartPosition;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
-    public void EndGame() {
-        Debug.Log("You Lose");
-
+    public void WinGame() {
+        Debug.Log("You win!");
     }
 }
