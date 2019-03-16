@@ -5,14 +5,13 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private int player_index;
+    public int KeysInsertedCount = 0;
 
     public void RespawnPlayer(Vector2 StartPosition, GameObject player) {
         player.transform.position = StartPosition;
     }
 
-    public void WinGame() {
-        Debug.Log("You win!");
-    }
+
     public int GetPlayerIndex(GameObject player) {
 
         if (player.tag == "PlayerOne")
@@ -24,7 +23,18 @@ public class GameManager : MonoBehaviour
             player_index = 1;
         }
 
-
         return player_index;
+    }
+
+    void Update()
+    {
+        if (KeysInsertedCount == 2) {
+            WinGame();
+        }
+    }
+
+
+    private void WinGame() {
+        Debug.Log("you win!");
     }
 }

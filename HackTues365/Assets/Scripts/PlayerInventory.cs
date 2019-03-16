@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    private bool HasKey = false;
+    public bool HasKey = false;
 
     public void PickUpKey() {
         HasKey = true;
