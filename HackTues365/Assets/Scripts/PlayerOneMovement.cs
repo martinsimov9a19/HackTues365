@@ -9,11 +9,8 @@ public class PlayerOneMovement : MonoBehaviour
     public Rigidbody2D rb;
     private Vector2 movement;
     private bool isGrounded = true;
- 
+    
 
-
-    private float fallmultiplier = 2.5f;
-    public float lowJumpMultiplier = 2f;
     private int player_index;
 
     private string[,] controlls =  { { "a", "w", "d" }, { "left", "up", "right"} };
@@ -21,18 +18,15 @@ public class PlayerOneMovement : MonoBehaviour
     [Range(1, 10)]
     public float jumpVelocity = 5f;
 
+    public GameManager gameManager;
+
     void Start()
     {
 
         rb = gameObject.GetComponent<Rigidbody2D>();
-        
-        if (gameObject.tag == "PlayerOne")
-        {
-            player_index = 0;
-        }
-        else if(gameObject.tag == "PlayerTwo"){
-            player_index = 1;
-        }
+
+        player_index = gameManager.GetPlayerIndex(gameObject);
+        Debug.Log(player_index);
     }
 
     void Update()

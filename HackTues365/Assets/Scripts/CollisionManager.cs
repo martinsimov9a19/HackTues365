@@ -8,12 +8,14 @@ public class CollisionManager : MonoBehaviour
 
     public GameManager gameManager;
     private Vector2 StartPosition;
-
+    private int player_index;
 
     void Start()
     {
         StartPosition = gameObject.transform.position;
-    }
+        player_index = gameManager.GetPlayerIndex(gameObject);
+        
+}
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,6 +25,12 @@ public class CollisionManager : MonoBehaviour
         if (other.tag == "Bush") {
             changeOpacity(0.5f, other.gameObject);
         }
+        if (other.tag == "KeyOne" || other.tag == "KeyTwo") {
+            AddUniquePlayerKey(player_index, other.gameObject);
+            
+        }
+       
+        
     }
     void OnTriggerExit2D(Collider2D collision)
     {
@@ -37,5 +45,16 @@ public class CollisionManager : MonoBehaviour
         Color tempColor = gameObject.GetComponent<SpriteRenderer>().color;
         tempColor.a = alpha;
         gameObject.GetComponent<SpriteRenderer>().color = tempColor;
+    }
+    private void AddUniquePlayerKey(int player_index, GameObject key)
+    {
+        if (player_index == 0 && key.tag == "KeyOne")
+        {
+            gameObject.GetComponent<PlayerInventory>().PickUpKey();
+        }
+        else if (player_index == 1 && key.tag == "KeyTwo")
+        {
+            gameObject.GetComponent<PlayerInventory>().PickUpKey();
+        }
     }
 }
