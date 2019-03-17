@@ -43,10 +43,10 @@ public class GameManager : MonoBehaviour
 
     private void WinGame() {
         WinMenu.GetComponent<Canvas>().enabled = true;
-        Time.timeScale = 0f;
+        
     }
     private void LoseGame() {
         LoseMenu.GetComponent<Canvas>().enabled = true;
-        Time.timeScale = 0f;
+        
     }
 }
