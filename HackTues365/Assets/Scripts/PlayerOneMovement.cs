@@ -15,13 +15,12 @@ public class PlayerOneMovement : MonoBehaviour
     public float jumpVelocity = 5f;
     public GameManager gameManager;
     public bool PlayerHasInserted = false;
-    public Animator animatorMale, animatorFemale;
+    public Animator animator;
 
     void Start()
     {
-
         rb = gameObject.GetComponent<Rigidbody2D>();
-
+        animator = gameObject.GetComponent<Animator>();
         player_index = gameManager.GetPlayerIndex(gameObject);
         Debug.Log(player_index);
     }
@@ -78,36 +77,19 @@ public class PlayerOneMovement : MonoBehaviour
     }
 
     void PlayAnimationLeft() {
-        if (player_index == 0)
-        {
-            animatorMale.SetBool("WalkLeft", true);
-        }
-        else if (player_index == 1) {
-            animatorFemale.SetBool("WalkLeft", true);
-        }
+
+        animator.SetBool("WalkLeft", true);
+
     }
     void PlayAnimationRight()
     {
-        if (player_index == 0)
-        {
-            animatorMale.SetBool("WalkRight", true);
-        }
-        else if (player_index == 1)
-        {
-            animatorFemale.SetBool("WalkRight", true);
-        }
+        animator.SetBool("WalkRight", true);
     }
     void EndAnimation() {
-        if (player_index == 0)
-        {
-            animatorMale.SetBool("WalkLeft", false);
-            animatorMale.SetBool("WalkRight", false);
-        }
-        else if (player_index == 1)
-        {
-            animatorFemale.SetBool("WalkLeft", false);
-            animatorFemale.SetBool("WalkRight", false);
-        }
+
+        animator.SetBool("WalkLeft", false);
+        animator.SetBool("WalkRight", false);
+        
     }
 
 }

@@ -30,7 +30,7 @@ public class LevelGenerator : MonoBehaviour
         foreach(SpriteInfo sprite in sprites) {
             
             if (sprite.color.Equals(color)) {
-                Debug.Log("Here");
+                
                 Vector2 pos = new Vector2(x, y);
                 Instantiate(sprite.prefab, pos, Quaternion.identity, transform);
                 

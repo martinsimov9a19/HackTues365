@@ -54,5 +54,8 @@ public class ButtonManager : MonoBehaviour
         string name = gameObject.name;
         SceneManager.LoadScene(name);
     }
+    public void LevelGenerateor() {
+        SceneManager.LoadScene("LevelGeneator");
+    }
 
 }

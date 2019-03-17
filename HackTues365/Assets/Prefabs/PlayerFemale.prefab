@@ -96,7 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbbfa69756951e140a49fb1a5c0ec624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 4278828205166518979, guid: 22d3a2c0f3178a74282c393646d2c92a,
+    type: 3}
   PlayerNearDoor: 0
 --- !u!114 &6184454643771394158
 MonoBehaviour:
@@ -148,8 +149,10 @@ MonoBehaviour:
   speed_temp: 0
   rb: {fileID: 0}
   jumpVelocity: 7.5
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 4278828205166518979, guid: 22d3a2c0f3178a74282c393646d2c92a,
+    type: 3}
   PlayerHasInserted: 0
+  animator: {fileID: 0}
 --- !u!61 &6439038420678981017
 BoxCollider2D:
   m_ObjectHideFlags: 0
