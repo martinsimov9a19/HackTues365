@@ -32,21 +32,24 @@ public class PlayerOneMovement : MonoBehaviour
         if (Input.GetButtonDown(controlls[player_index, 0]))
         {
             speed_temp = -speed;
-            PlayAnimation();
+            PlayAnimationLeft();
 
         }
         else if (Input.GetKeyDown(controlls[player_index, 2]))
         {
 
             speed_temp = Mathf.Abs(speed);
-            PlayAnimation();
+            PlayAnimationRight();
         }
         else if (Input.GetButtonUp(controlls[player_index, 0]) || Input.GetButtonUp(controlls[player_index, 2]))
         {
             speed_temp = 0;
-            EndAnimation();
+            
         }
         movement = new Vector2(speed_temp, 0);
+        if (movement.x == 0) {
+            EndAnimation();
+        }
 
 
         if (Input.GetKeyDown(controlls[player_index, 1]) && isGrounded && rb.velocity.y == 0)
@@ -74,24 +77,36 @@ public class PlayerOneMovement : MonoBehaviour
         gameObject.transform.Translate(movement / 10);
     }
 
-    void PlayAnimation() {
+    void PlayAnimationLeft() {
         if (player_index == 0)
         {
-            animatorMale.SetBool("IsMoving", true);
+            animatorMale.SetBool("WalkLeft", true);
         }
         else if (player_index == 1) {
-            animatorFemale.SetBool("IsMoving", true);
+            animatorFemale.SetBool("WalkLeft", true);
         }
     }
-
-    void EndAnimation() {
+    void PlayAnimationRight()
+    {
         if (player_index == 0)
         {
-            animatorMale.SetBool("IsMoving", false);
+            animatorMale.SetBool("WalkRight", true);
         }
         else if (player_index == 1)
         {
-            animatorFemale.SetBool("IsMoving", false);
+            animatorFemale.SetBool("WalkRight", true);
+        }
+    }
+    void EndAnimation() {
+        if (player_index == 0)
+        {
+            animatorMale.SetBool("WalkLeft", false);
+            animatorMale.SetBool("WalkRight", false);
+        }
+        else if (player_index == 1)
+        {
+            animatorFemale.SetBool("WalkLeft", false);
+            animatorFemale.SetBool("WalkRight", false);
         }
     }
 
