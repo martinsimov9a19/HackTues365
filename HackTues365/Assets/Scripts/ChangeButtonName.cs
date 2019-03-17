@@ -11,11 +11,11 @@ public class ChangeButtonName : MonoBehaviour
     public void ChangeButtonText() {
         if (index == 0)
         {
-            text.text = "Windowed";
+            text.text = "WINDOWED";
             index = 1;
         }
         else {
-            text.text = "Full Screen";
+            text.text = "FULL SCREEN";
             index = 0;
         }
     

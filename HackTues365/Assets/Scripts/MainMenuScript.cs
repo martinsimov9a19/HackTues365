@@ -6,9 +6,6 @@ using UnityEngine.UI;
 public class MainMenuScript : MonoBehaviour
 {
 
-    public static Transform text;
-
-
     public void QuitGame()
     {
         Application.Quit();
@@ -17,19 +14,15 @@ public class MainMenuScript : MonoBehaviour
     public void FullScreen() {
         if (!Screen.fullScreen)
         {
-            Debug.Log(text);
-            
+   
             Screen.fullScreen = true;
             
         }
         else {
-            Debug.Log(text);
-            
+
             Screen.fullScreen = !Screen.fullScreen;
             
         }
     }
-
-
 
 }
