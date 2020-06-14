@@ -15,14 +15,14 @@ The game is played by 2 people sitting next to each other. Both players can see 
 ![Level Generator](https://i.ibb.co/3rCjqMF/3.png)
 ![CO-OP](https://i.ibb.co/NLbmd8J/1.png)
 ![Menu](https://i.ibb.co/DgrTzDX/2.png)
-## Usage
-First download our repository:
-```python
-git clone https://github.com/msimov/different-perspective.git
-```
-Or download our repository as zip.
 
-Then navigate to the build folder and run the HackTues365.exe and you are good to go!
+## Usage
+
+Go to [Releases](https://github.com/msimov/different-perspective/releases) and download the Different Perspective zip from our latest release.
+
+Extract the zip and open Different Perspective.exe
+
+Play the game!
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
