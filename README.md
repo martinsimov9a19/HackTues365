@@ -1,6 +1,6 @@
 # Different Perspective
 
-Different Perspective is a couch multiplayer game developed by Martin Simov, Kiril Chinagarov, Marian Bitcov, Alex Videnov and Nikita Prodadonov during the Hack Tues 365 Hackathon. It's purpose is to make 2 players have fun together by sharing information about the environment around each player to explore and complete levels while having limited vision.
+Different Perspective is a couch multiplayer game developed by Martin Simov, Kiril Chinagarov, Marian Bitcov, Alex Videnov and Nikita Prodadonov during the Hack Tues 365 Hackathon. It's purpose is to make 2 players have fun together by sharing information about the environment around each player so they can explore and complete levels while having limited vision.
 
 ## Gameplay
 
